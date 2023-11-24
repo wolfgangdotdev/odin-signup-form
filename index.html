@@ -40,23 +40,28 @@
 					<ul>
 						<li>
 							<label for="fname">First Name</label>
-							<input type="text" id="fname" name="fname" />
+							<input type="text" id="fname" name="fname" required />
 						</li>
 						<li>
 							<label for="lname">Last Name</label>
-							<input type="text" id="lname" name="lname" />
+							<input type="text" id="lname" name="lname" required />
 						</li>
 						<li>
 							<label for="lname">Email Address</label>
-							<input type="email" id="email" name="email" />
+							<input type="email" id="email" name="email" required />
 						</li>
 						<li>
 							<label for="phone">Phone Number</label>
-							<input type="tel" id="phone" name="phone" />
+							<input type="tel" id="phone" name="phone" required />
 						</li>
 						<li>
 							<label for="password">Password</label>
-							<input type="password" id="password" name="password" />
+							<input
+								type="password"
+								id="password"
+								name="password"
+								minlength="8"
+								required />
 							<p class="error-text hidden">* Passwords do not match</p>
 						</li>
 						<li>
@@ -64,7 +69,8 @@
 							<input
 								type="password"
 								id="confirm-password"
-								name="confirm-password" />
+								name="confirm-password"
+								required />
 						</li>
 					</ul>
 				</form>
