@@ -9,7 +9,15 @@
 	</head>
 	<body>
 		<div class="hero">
-			<h1><img src="./images/odin-lined.png" alt="Odin Logo" />ODIN</h1>
+			<div class="title">
+				<img
+					src="./images/odin-lined.png"
+					alt="Odin Logo"
+					class="logo"
+					width="380"
+					height="508" />
+				<h1>ODIN</h1>
+			</div>
 			<div class="attribution">
 				Photo by
 				<a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
@@ -20,7 +28,8 @@
 			<header class="header">
 				<p>
 					This is not a real online service! You know you need something like
-					this in your life to help you realize your deepest dreams. Sign up now
+					this in your life to help you realize your deepest dreams. Sign up
+					<em>now</em>
 					to get started.
 				</p>
 				<p>You <em>know</em> you want to.</p>
@@ -48,6 +57,7 @@
 						<li>
 							<label for="password">Password</label>
 							<input type="password" id="password" name="password" />
+							<p class="error-text hidden">* Passwords do not match</p>
 						</li>
 						<li>
 							<label for="confirm-pasword">Confirm Password</label>

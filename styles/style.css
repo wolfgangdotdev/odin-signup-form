@@ -1,0 +1,209 @@
+/* CSS Reset */
+/* makes sizing simpler */
+
+* {
+	/* outline: 1px solid red; */
+}
+
+:where(*, *::before, *::after) {
+	box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+:where(*) {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* min body height */
+
+:where(body) {
+	min-height: 100vh;
+}
+
+/* responsive images/videos */
+:where(img, picture, svg, video) {
+	display: block;
+	max-width: 100%;
+}
+
+/* Remove list styles */
+:where(ul, ol) {
+	list-style: none;
+}
+
+/* Base Typography */
+
+@font-face {
+	font-family: "Norse Bold";
+	src: url("../fonts/Norse-Bold.otf") format("opentype");
+}
+
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	font-family: "Norse Bold";
+}
+
+/* Layout */
+
+body {
+	display: flex;
+}
+
+/* Hero */
+
+.hero {
+	color: white;
+	flex: 1 0 35%;
+	height: 100vh;
+	background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.logo {
+	height: 6rem;
+	width: auto;
+}
+
+.title {
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 1rem 0;
+	margin-top: 40%;
+}
+
+h1 {
+	margin-top: 1.5rem;
+}
+
+.attribution {
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.attribution a {
+	color: inherit;
+}
+
+/* Main */
+
+main {
+	background-color: rgb(248, 249, 250);
+}
+
+/* Header */
+
+.header {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: 10rem 21rem 4rem 2rem;
+	line-height: 1.25;
+}
+
+.header > * + * {
+	margin-top: 1rem;
+}
+
+em {
+	font-style: italic;
+}
+
+/* Form */
+.form {
+	padding: 2rem;
+	padding-right: 10rem;
+	background-color: white;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.form ul {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 5rem;
+	row-gap: 2rem;
+}
+
+.form li {
+	display: flex;
+	flex-direction: column;
+	min-width: 16rem;
+}
+
+.form label {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-size: 0.75rem;
+	font-weight: bold;
+	color: rgb(48, 48, 48);
+}
+
+.form input {
+	border: 1px solid #e5e7eb;
+	background-color: rgb(255, 254, 254);
+	border-radius: 4px;
+	min-height: 2rem;
+}
+
+.form input:focus {
+	border: 1px solid blue;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+input.error {
+	border: 1px solid rgb(176, 26, 26);
+}
+
+.error-text {
+	color: rgb(176, 26, 26);
+	font-size: 0.75rem;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+/* CTA */
+
+.cta {
+	padding: 2rem;
+}
+
+.create-button {
+	border: none;
+	border-radius: 6px;
+	background-color: #596d48;
+	color: white;
+	font-size: 1.125rem;
+	padding: 1rem 3rem;
+	margin-bottom: 2rem;
+}
+
+.cta p {
+	font-size: 1.125rem;
+}
+
+.cta a {
+	color: #596d48;
+	text-decoration: none;
+	font-weight: bold;
+}
